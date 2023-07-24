@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canadian Soccer Academy - Registration</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  <header>
+    <center>
+    <h1>Canadian Soccer Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="csa.html">Home</a></li>
+      </ul>
+    </nav>
+    </center>
+  </header>
+
+  <main>
+    <section class="registration-form">
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <label for="child_name">Child's Name:</label>
+        <input type="text" id="child_name" name="child_name" required>
+
+        <label for="parent_name">Parent's Name:</label>
+        <input type="text" id="parent_name" name="parent_name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="program">Select Program:</label>
+        <select id="program" name="program" required>
+          <option value="" disabled selected>Select a program</option>
+          <option value="recreational">Recreational Soccer</option>
+          <option value="competitive">Competitive Soccer</option>
+          <!-- Add more program options if needed -->
+        </select>
+
+        <label for="message">Message (optional):</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <center>
+    <p>&copy; 2023 Canadian Soccer Academy. All rights reserved.</p>
+    </center>
+  </footer>
+</body>
+</html>

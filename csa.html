@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Canadian Soccer Academy </title>
+  <!-- Add your CSS link here for styling -->
+  <link rel="stylesheet" href="csa.css">
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+     <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#competitive">Competitive</a></li>
+        <li><a href="#recreational">Recreational</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#communication">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home section -->
+<center>
+
+  <img src="childsoc.jpg"/>
+
+  <section id="home">
+    <h2>Welcome to Canadian Soccer Academy</h2>
+    <p>
+      We are dedicated to promoting soccer in Canada by providing children with the opportunity to explore their passion
+      for the sport. Our academy follows the successful model of major soccer club academies worldwide, but with a focus
+      on nurturing talent across Canada.
+    </p>
+    <p>
+      Whether your child dreams of playing professionally or just wants to enjoy the game recreationally, we have programs
+      designed to suit every level and ambition.
+    </p>
+  </section>
+
+  <!-- Competitive section -->
+  <section id="competitive">
+    <h2>Competitive Soccer</h2>
+    <p>
+      Our competitive soccer programs are tailored for young athletes who aspire to take their skills to the next level.
+      Through our rigorous training, experienced coaches, and competitive league opportunities, we aim to groom the future
+      soccer stars of Canada.
+    </p>
+    <p>
+      To learn more about our competitive programs, click <a href="competitive.html">here</a>.
+    </p>
+  </section>
+
+  <!-- Recreational section -->
+  <section id="recreational">
+    <h2>Recreational Soccer</h2>
+    <p>
+      We believe that soccer should be accessible and enjoyable for everyone. Our recreational programs focus on creating
+      a fun and inclusive environment for children to develop their skills, make friends, and fall in love with the sport.
+    </p>
+    <p>
+      To explore our recreational offerings, click <a href="recreational.html">here</a>.
+    </p>
+  </section>
+  </center>
+
+  <!-- Videos section -->
+  <section id="videos">
+    <center>
+    <h2>Explore Our Programs Through Videos</h2>
+    <div>
+      <!-- Add video embeds or links here -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    </center>
+  </section>
+
+  <!-- Register section -->
+  <section id="register">
+    <h2>Register for Our Soccer Programs</h2>
+    <p>
+      Ready to take the first step towards a soccer career or simply looking to join a recreational league? Register now
+      to become a part of the Canadian Soccer Academy family!
+    </p>
+    <!-- Add your registration form or link to the registration page here -->
+    <a href="registration.html" class="register-button">Register Now</a>
+  </section>
+
+  <center>
+  <section id="communication">
+    <h2>Contact us !</h2>
+    <p>
+      Our communication department is here to provide you with all the necessary information about our soccer programs.
+      Whether you have questions, need assistance, or want updates, we are here to help!
+      <form action="send_message.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Send Message">
+    </form>
+    </p>
+
+    <!-- Add contact information for the communication department here -->
+    <p>Email: info@canadiansocceracademy.ca</p>
+    <p>Phone: +1 (123) 456-7890</p>
+  </section>
+   </center>
+
+    <!-- JavaScript code for smooth scrolling -->
+ 
+  <script>
+    // Add smooth scrolling to anchor links
+    document.addEventListener('click', function (event) {
+      if (event.target.tagName === 'A') {
+        const targetId = event.target.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          event.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  </script>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 Canadian Soccer Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
